@@ -1,0 +1,17 @@
+D:\DATA\Movie\MovieWeb\DataAccess\bin\Debug\net7.0\DataAccess.deps.json
+D:\DATA\Movie\MovieWeb\DataAccess\bin\Debug\net7.0\DataAccess.dll
+D:\DATA\Movie\MovieWeb\DataAccess\bin\Debug\net7.0\DataAccess.pdb
+D:\DATA\Movie\MovieWeb\DataAccess\bin\Debug\net7.0\Model.dll
+D:\DATA\Movie\MovieWeb\DataAccess\bin\Debug\net7.0\Model.pdb
+D:\DATA\Movie\MovieWeb\DataAccess\obj\Debug\net7.0\DataAccess.csproj.AssemblyReference.cache
+D:\DATA\Movie\MovieWeb\DataAccess\obj\Debug\net7.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\DATA\Movie\MovieWeb\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfoInputs.cache
+D:\DATA\Movie\MovieWeb\DataAccess\obj\Debug\net7.0\DataAccess.AssemblyInfo.cs
+D:\DATA\Movie\MovieWeb\DataAccess\obj\Debug\net7.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\DATA\Movie\MovieWeb\DataAccess\obj\Debug\net7.0\DataAccess.csproj.Up2Date
+D:\DATA\Movie\MovieWeb\DataAccess\obj\Debug\net7.0\DataAccess.dll
+D:\DATA\Movie\MovieWeb\DataAccess\obj\Debug\net7.0\refint\DataAccess.dll
+D:\DATA\Movie\MovieWeb\DataAccess\obj\Debug\net7.0\DataAccess.pdb
+D:\DATA\Movie\MovieWeb\DataAccess\obj\Debug\net7.0\ref\DataAccess.dll
+D:\DATA\Movie\MovieWeb\DataAccess\bin\Debug\net7.0\DataAccess.runtimeconfig.json
+D:\DATA\Movie\MovieWeb\DataAccess\obj\Debug\net7.0\DataAccess.genruntimeconfig.cache
