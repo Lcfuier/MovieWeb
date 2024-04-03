@@ -1,367 +1,367 @@
 {
   "Files": [
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Presentation.bundle.scp.css",
+      "Id": "D:\\MovieWeb\\Presentation\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\Presentation.bundle.scp.css",
       "PackagePath": "staticwebassets\\Presentation.bundle.scp.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\css\\style.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\css\\style.css",
       "PackagePath": "staticwebassets\\assets\\css\\style.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\cta-bg.jpg",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\cta-bg.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\cta-bg.jpg"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\footer-bg.jpg",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\footer-bg.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\footer-bg.jpg"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\footer-bottom-img.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\footer-bottom-img.png",
       "PackagePath": "staticwebassets\\assets\\images\\footer-bottom-img.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\hero-bg.jpg",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\hero-bg.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\hero-bg.jpg"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\logo.svg",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\logo.svg",
       "PackagePath": "staticwebassets\\assets\\images\\logo.svg"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-1.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-1.png",
       "PackagePath": "staticwebassets\\assets\\images\\movie-1.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-2.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-2.png",
       "PackagePath": "staticwebassets\\assets\\images\\movie-2.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-3.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-3.png",
       "PackagePath": "staticwebassets\\assets\\images\\movie-3.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-4.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-4.png",
       "PackagePath": "staticwebassets\\assets\\images\\movie-4.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-5.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-5.png",
       "PackagePath": "staticwebassets\\assets\\images\\movie-5.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-6.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-6.png",
       "PackagePath": "staticwebassets\\assets\\images\\movie-6.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-7.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-7.png",
       "PackagePath": "staticwebassets\\assets\\images\\movie-7.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-8.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-8.png",
       "PackagePath": "staticwebassets\\assets\\images\\movie-8.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-detail-bg.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\movie-detail-bg.png",
       "PackagePath": "staticwebassets\\assets\\images\\movie-detail-bg.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\series-1.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\series-1.png",
       "PackagePath": "staticwebassets\\assets\\images\\series-1.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\series-2.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\series-2.png",
       "PackagePath": "staticwebassets\\assets\\images\\series-2.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\series-3.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\series-3.png",
       "PackagePath": "staticwebassets\\assets\\images\\series-3.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\series-4.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\series-4.png",
       "PackagePath": "staticwebassets\\assets\\images\\series-4.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\service-banner.jpg",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\service-banner.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\service-banner.jpg"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\service-bg.jpg",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\service-bg.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\service-bg.jpg"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\top-rated-bg.jpg",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\top-rated-bg.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\top-rated-bg.jpg"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\tv-series-bg.jpg",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\tv-series-bg.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\tv-series-bg.jpg"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\upcoming-1.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\upcoming-1.png",
       "PackagePath": "staticwebassets\\assets\\images\\upcoming-1.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\upcoming-2.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\upcoming-2.png",
       "PackagePath": "staticwebassets\\assets\\images\\upcoming-2.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\upcoming-3.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\upcoming-3.png",
       "PackagePath": "staticwebassets\\assets\\images\\upcoming-3.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\upcoming-4.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\upcoming-4.png",
       "PackagePath": "staticwebassets\\assets\\images\\upcoming-4.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\upcoming-bg.png",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\upcoming-bg.png",
       "PackagePath": "staticwebassets\\assets\\images\\upcoming-bg.png"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\assets\\js\\script.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\js\\script.js",
       "PackagePath": "staticwebassets\\assets\\js\\script.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\css\\BoostrapTheme.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\css\\BoostrapTheme.css",
       "PackagePath": "staticwebassets\\css\\BoostrapTheme.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\css\\site.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\favicon.ico",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\js\\site.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\DATA\\Movie\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

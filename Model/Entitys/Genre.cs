@@ -14,9 +14,7 @@ namespace Model.Entitys
         public Guid GenreId { get; set; }
         public string GenreName { get; set; }
 
-        [ForeignKey("GenreId")]
-        [InverseProperty("Genres")]
         public virtual ICollection<Movie> Movies { get; set; } = new List<Movie>();
-        public ICollection<Rating>? Ratings { get; set; }
+
     }
 }

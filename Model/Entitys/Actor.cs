@@ -16,8 +16,7 @@ namespace Model.Entitys
         [Required]
         [StringLength(50)]
         public string ActorName { get; set; }
-        [ForeignKey("ActorId")]
-        [InverseProperty("Actors")]
+ 
         public virtual ICollection<Movie> Movies{ get; set; } = new List<Movie>();
     }
 }

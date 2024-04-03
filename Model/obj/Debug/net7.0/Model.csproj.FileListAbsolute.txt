@@ -10,3 +10,16 @@ D:\DATA\Movie\MovieWeb\Model\obj\Debug\net7.0\Model.dll
 D:\DATA\Movie\MovieWeb\Model\obj\Debug\net7.0\refint\Model.dll
 D:\DATA\Movie\MovieWeb\Model\obj\Debug\net7.0\Model.pdb
 D:\DATA\Movie\MovieWeb\Model\obj\Debug\net7.0\ref\Model.dll
+D:\MovieWeb\Model\bin\Debug\net7.0\Model.deps.json
+D:\MovieWeb\Model\bin\Debug\net7.0\Model.dll
+D:\MovieWeb\Model\bin\Debug\net7.0\Model.pdb
+D:\MovieWeb\Model\obj\Debug\net7.0\Model.csproj.AssemblyReference.cache
+D:\MovieWeb\Model\obj\Debug\net7.0\Model.GeneratedMSBuildEditorConfig.editorconfig
+D:\MovieWeb\Model\obj\Debug\net7.0\Model.AssemblyInfoInputs.cache
+D:\MovieWeb\Model\obj\Debug\net7.0\Model.AssemblyInfo.cs
+D:\MovieWeb\Model\obj\Debug\net7.0\Model.csproj.CoreCompileInputs.cache
+D:\MovieWeb\Model\obj\Debug\net7.0\Model.sourcelink.json
+D:\MovieWeb\Model\obj\Debug\net7.0\Model.dll
+D:\MovieWeb\Model\obj\Debug\net7.0\refint\Model.dll
+D:\MovieWeb\Model\obj\Debug\net7.0\Model.pdb
+D:\MovieWeb\Model\obj\Debug\net7.0\ref\Model.dll

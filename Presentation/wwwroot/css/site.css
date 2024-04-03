@@ -562,7 +562,7 @@ body {
 \*-----------------------------------*/
 
 .hero {
-    background: url("../images/hero-bg.jpg") no-repeat;
+    background:  no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 750px;
@@ -602,7 +602,7 @@ body {
 \*-----------------------------------*/
 
 .upcoming {
-    background: url("../images/upcoming-bg.png") no-repeat;
+    background: url("../assets/images/upcoming-bg.png") no-repeat;
     background-size: cover;
     background-position: center;
     padding-block: var(--section-padding);
@@ -652,7 +652,7 @@ body {
 \*-----------------------------------*/
 
 .service {
-    background: url("../images/service-bg.jpg") no-repeat;
+    background: url("../assets/images/service-bg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     padding-block: var(--section-padding);
@@ -767,7 +767,7 @@ body {
 \*-----------------------------------*/
 
 .top-rated {
-    background: url("../images/top-rated-bg.jpg") no-repeat;
+    background: url("../assets/images/top-rated-bg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     padding-block: var(--section-padding);
@@ -827,7 +827,7 @@ body {
 \*-----------------------------------*/
 
 .tv-series {
-    background: url("../images/tv-series-bg.jpg") no-repeat;
+    background: url("../assets/images/tv-series-bg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     padding-block: var(--section-padding);
@@ -846,7 +846,7 @@ body {
 \*-----------------------------------*/
 
 .cta {
-    background: url("../images/cta-bg.jpg") no-repeat;
+    background: url("../assets/images/cta-bg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -909,7 +909,7 @@ body {
 \*-----------------------------------*/
 
 .footer-top {
-    background: url("../images/footer-bg.jpg") no-repeat;
+    background: url("../assets/images/footer-bg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     padding-block: 80px 50px;
@@ -1045,7 +1045,7 @@ body {
 \*-----------------------------------*/
 
 .movie-detail {
-    background: url("../images/movie-detail-bg.png") no-repeat;
+    background: url("../assets/images/movie-detail-bg.png") no-repeat;
     background-size: cover;
     background-position: center;
     padding-top: 160px;
@@ -1889,8 +1889,9 @@ body {
 
         .nav-tabs .nav-link.active,
         .nav-tabs .nav-item.show .nav-link {
-            color: var(--bs-nav-tabs-link-active-color);
-            background-color: var(--bs-nav-tabs-link-active-bg);
+            color: lightgray;
+            background: transparent;
+            background-color: lightgray;
             border-color: var(--bs-nav-tabs-link-active-border-color);
         }
 
@@ -2475,5 +2476,5 @@ body {
 .nav-pills .nav-item.open .nav-link,
 .nav-pills .nav-item.open .nav-link:focus,
 .nav-pills .nav-item.open .nav-link:hover {
-    color: #fff;
+    color: lightgray;
 }

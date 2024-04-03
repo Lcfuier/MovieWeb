@@ -22,32 +22,6 @@ namespace DataAccess.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ActorMovie", b =>
-                {
-                    b.Property<Guid>("ActorId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("MovieId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("ActorId", "MovieId");
-
-                    b.ToTable("ActorMovie");
-                });
-
-            modelBuilder.Entity("GenreMovie", b =>
-                {
-                    b.Property<Guid>("GenreId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("MovieId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("GenreId", "MovieId");
-
-                    b.ToTable("GenreMovie");
-                });
-
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
                     b.Property<string>("Id")
@@ -295,9 +269,6 @@ namespace DataAccess.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("AverageRating")
-                        .HasColumnType("int");
-
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
@@ -331,6 +302,9 @@ namespace DataAccess.Migrations
                     b.Property<int>("ReleaseYear")
                         .HasColumnType("int");
 
+                    b.Property<bool>("Released")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(255)
@@ -359,9 +333,6 @@ namespace DataAccess.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid?>("GenreId")
-                        .HasColumnType("uniqueidentifier");
-
                     b.Property<Guid>("MovieId")
                         .HasColumnType("uniqueidentifier");
 
@@ -378,8 +349,6 @@ namespace DataAccess.Migrations
                         .HasColumnType("nvarchar(255)");
 
                     b.HasKey("RatingId");
-
-                    b.HasIndex("GenreId");
 
                     b.HasIndex("MovieId");
 
@@ -494,10 +463,6 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("Model.Entitys.Rating", b =>
                 {
-                    b.HasOne("Model.Entitys.Genre", null)
-                        .WithMany("Ratings")
-                        .HasForeignKey("GenreId");
-
                     b.HasOne("Model.Entitys.Movie", "Movie")
                         .WithMany("Ratings")
                         .HasForeignKey("MovieId")
@@ -547,11 +512,6 @@ namespace DataAccess.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired()
                         .HasConstraintName("FK_MOVIEGENRE_MOVIEGENRE_MOVIE");
-                });
-
-            modelBuilder.Entity("Model.Entitys.Genre", b =>
-                {
-                    b.Navigation("Ratings");
                 });
 
             modelBuilder.Entity("Model.Entitys.Movie", b =>

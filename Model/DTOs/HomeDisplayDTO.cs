@@ -11,5 +11,6 @@ namespace Model.DTOs
     {
         public IEnumerable<Movie> movies { get; set; }
         public IEnumerable<Genre> genres { get; set; }
+        public IEnumerable<Rating> ratings{ get; set; }
     }
 }

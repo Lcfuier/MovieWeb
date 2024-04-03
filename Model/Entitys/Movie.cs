@@ -18,7 +18,7 @@ namespace Model.Entitys
         public string Description { get; set; }
         [MaxLength(80)]
         public string Language { get; set; }
-        [Range(1, 2024)]
+        [Range(1, 2030)]
         public int ReleaseYear { get; set; }
         [MaxLength(100)]
         public string Director { get; set; }
@@ -31,15 +31,15 @@ namespace Model.Entitys
         public string MPAA { get; set; }
         public DateTime CreateDate { get; set; }
         public int MovieDuration { get; set; }
-        public int AverageRating { get; set; }
+        public Boolean Released { get; set; }
+        [NotMapped]
+        public double AverageStar { get; set; }
 
-        [ForeignKey("MovieId")]
-        [InverseProperty("Movies")]
         public virtual ICollection<Actor> Actors { get; set; } = new List<Actor>();
 
-        [ForeignKey("MovieId")]
-        [InverseProperty("Movies")]
+
         public virtual ICollection<Genre> Genres { get; set; } = new List<Genre>();
-        public ICollection<Rating>? Ratings{ get; set; }
+        public  ICollection<Rating> Ratings{ get; set; } = new List<Rating>();
+
     }
 }

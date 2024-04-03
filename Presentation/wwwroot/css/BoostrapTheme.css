@@ -4330,8 +4330,9 @@ textarea.form-control-lg {
 
         .nav-tabs .nav-link.active,
         .nav-tabs .nav-item.show .nav-link {
-            color: var(--bs-nav-tabs-link-active-color);
-            background-color: var(--bs-nav-tabs-link-active-bg);
+            color: lightgray;
+            background: transparent;
+            background-color: lightgray;
             border-color: var(--bs-nav-tabs-link-active-border-color);
         }
 
@@ -13758,7 +13759,7 @@ textarea.form-control-lg {
 .nav-pills .nav-item.open .nav-link,
 .nav-pills .nav-item.open .nav-link:focus,
 .nav-pills .nav-item.open .nav-link:hover {
-    color: #fff;
+    color: lightgray;
 }
 
 .breadcrumb a {
