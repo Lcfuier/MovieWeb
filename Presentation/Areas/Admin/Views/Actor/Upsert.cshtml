@@ -1,0 +1,31 @@
+﻿@model ActorDTO
+@{
+    ViewData["Title"] = ViewBag.Action == "Add" ? "Thêm Diễn Viên" : "Chỉnh Sửa Diễn Viên";
+}
+
+<form asp-action="Upsert" method="post">
+    <div class="row p-3 border">
+        <div class="col-md-12 border-bottom">
+            <h2 class="text-primary">@ViewData["Title"]</h2>
+        </div>
+        <div class="col-md-8 pt-4">
+            <input type="hidden" asp-for="ActorId" />
+
+            <div class="mb-3 row">
+                <div class="col-md-3">
+                    <label class="form-label" asp-for="ActorName">Thể Loại</label>
+                </div>
+                <div class="col-md-9">
+                    <input class="form-control" asp-for="ActorName" />
+                    <span class="text-danger" asp-validation-for="ActorName"></span>
+                </div>
+            </div>
+
+            <partial name="_ActionOrReturnPartial" />
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

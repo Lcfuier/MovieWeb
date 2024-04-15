@@ -31,6 +31,11 @@ namespace DataAccess.Data
                         .WithMany(x => x.Ratings)
                         .HasForeignKey(y => y.UserId)
                         .IsRequired();
+            modelBuilder.Entity<MovieDetail>()
+                        .HasOne(i => i.Movie)
+                        .WithMany(x => x.MovieDetails)
+                        .HasForeignKey(y => y.MovieId)
+                        .IsRequired();
             modelBuilder.Entity<Actor>(entity =>
             {
                 entity.HasMany(d => d.Movies).WithMany(p => p.Actors)

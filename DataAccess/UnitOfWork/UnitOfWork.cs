@@ -15,6 +15,7 @@ namespace DataAccess.UnitOfWork
         public IActorRepository Actor { get; private set; }
         public IGenreRepository Genre { get; private set; }
         public IMovieRepository Movie { get; private set; }
+        public IMovieDetailRepository MovieDetail { get; private set; }
         public IRatingRepository Rating { get; private set; }
         public IUserRepository User { get; private set; }
         public UnitOfWork(MovieWebDbContext context)
@@ -23,6 +24,7 @@ namespace DataAccess.UnitOfWork
             Actor = new ActorRepository(_context);
             Genre = new GenreRepository(_context);
             Movie = new MovieRepository(_context);
+            MovieDetail = new MovieDetailRepository(_context);
             Rating = new RatingRepository(_context);
             User = new UserRepository(_context);
         }

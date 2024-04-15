@@ -1045,7 +1045,7 @@ body {
 \*-----------------------------------*/
 
 .movie-detail {
-    background: url("../assets/images/movie-detail-bg.png") no-repeat;
+    background-image: url('../../assets/images/upcoming-bg.png');
     background-size: cover;
     background-position: center;
     padding-top: 160px;
@@ -1055,7 +1055,7 @@ body {
 .movie-detail-banner {
     position: relative;
     background: var(--gunmetal-1);
-    max-width: 300px;
+    max-width: 400px;
     margin-inline: auto;
     border-radius: 6px;
     overflow: hidden;
@@ -1098,7 +1098,7 @@ body {
     }
 
 .movie-detail .meta-wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .storyline {
@@ -1794,7 +1794,7 @@ body {
     }
 
     .movie-detail-content {
-        max-width: 620px;
+        max-width: 820px;
     }
 
     .detail-title {
@@ -2477,4 +2477,8 @@ body {
 .nav-pills .nav-item.open .nav-link:focus,
 .nav-pills .nav-item.open .nav-link:hover {
     color: lightgray;
+}
+.containerVideo {
+    margin: 50px auto;
+    max-width: 500px;
 }

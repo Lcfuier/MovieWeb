@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "PVtPXe9TUhyG4dr1HKtWaoQLXhu/sThbNILBV6nDg8s/FNUSo2V0fq6ZrwMt+dHM58jUbWzs5UASfnRHgJX4Ew==",
+  "dgSpecHash": "3g4aZPsM9bJqjpreiAbnVcth5mPSIPcDx70WPsWIx2ySG6jI2EDu7QYCpGMn5YTAeXTuCLy19Is9eJhZMrytdA==",
   "success": true,
   "projectFilePath": "D:\\MovieWeb\\Model\\Model.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ADMIN\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.aspnetcore.authorization\\2.2.0\\microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",

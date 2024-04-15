@@ -1,0 +1,250 @@
+﻿@using Model.Constants
+@model UpdateMovieDTO
+@{
+    ViewData["Title"] = ViewBag.Action == "Add" ? "Thêm Phim" : "Chỉnh Sửa Phim";
+}
+
+<form asp-action="Upsert" id="movie-upsert-form" method="post" enctype="multipart/form-data">
+    <div class="row p-3 border">
+        <div class="col-12 border-bottom">
+            <h2 class="text-primary">@ViewData["Title"]</h2>
+        </div>
+        <div class="col-lg-8 pt-4">
+            <input type="hidden" asp-for="movieDto.MovieId" />
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="@Model.movieDto.Title">Tiêu đề*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="movieDto.Title" />
+                    <span class="text-danger" asp-validation-for="movieDto.Title"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="movieDto.Description">Mô tả*</label>
+                </div>
+                <div class="col-9">
+                    <textarea class="form-control" rows="6" asp-for="movieDto.Description"></textarea>
+                    <span class="text-danger" asp-validation-for="movieDto.Description"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="movieDto.Language">Quốc gia*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="movieDto.Language" />
+                    <span class="text-danger" asp-validation-for="movieDto.Language"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="movieDto.ReleaseYear">Năm công chiếu*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="movieDto.ReleaseYear" />
+                    <span class="text-danger" asp-validation-for="movieDto.ReleaseYear"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="movieDto.Director">Đạo diễn*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="movieDto.Director" />
+                    <span class="text-danger" asp-validation-for="movieDto.Director"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="movieDto.TrailerURL">Trailer URL*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="movieDto.TrailerURL" />
+                    <span class="text-danger" asp-validation-for="movieDto.TrailerURL"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="movieDto.quality">Chất lượng*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="movieDto.quality" />
+                    <span class="text-danger" asp-validation-for="movieDto.quality"></span>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="movieDto.MPAA">MPAA*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="movieDto.MPAA" />
+                    <span class="text-danger" asp-validation-for="movieDto.MPAA"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="movieDto.MovieDuration">Thời lượng phim</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="movieDto.MovieDuration" />
+                    <span class="text-danger" asp-validation-for="movieDto.MovieDuration"></span>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="movieDto.Released">Phát hành*</label>
+                </div>
+                <div class="col-9">
+                    @if (Model.movieDto.Released)
+                    {
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="true" asp-for="movieDto.Released" id="flexCheckDefault" checked>
+                            <label class="form-check-label">
+                            </label>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="true" asp-for="movieDto.Released" id="flexCheckDefault">
+                            <label class="form-check-label">
+                            </label>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="movieDto.IsSeriesMovie">Phim bộ*</label>
+                </div>
+                <div class="col-9">
+                    @if(Model.movieDto.IsSeriesMovie){
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="true" asp-for="movieDto.IsSeriesMovie" id="flexCheckDefault" checked>
+                        <label class="form-check-label" >
+                        </label>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="true" asp-for="movieDto.IsSeriesMovie" id="flexCheckDefault" >
+                            <label class="form-check-label" >
+                            </label>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label">Thể loại*</label>
+                </div>
+                <div class="col-9">
+                    <div class="checkbox-column">
+                        @foreach (var genre in Model.genres)
+                        {
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox"
+                                       id="genre-@genre.GenreId"
+                                       name="movieDto.GenreIds" value="@genre.GenreId"
+                                       checked=@(CheckGenre.IsSelected(Model.movieDto, genre)) />
+                                <label class="form-check-label" for="genre-@genre.GenreId">
+                                    @genre.GenreName
+                                </label>
+                            </div>
+                        }
+                    </div>
+                    <span class="text-danger" id="category-error"></span>
+                    <a class="text-secondary" asp-area="Admin" asp-controller="Genre" asp-action="Upsert">
+                        Thêm thể loại khác
+                    </a>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label">Diễn viên*</label>
+                </div>
+                <div class="col-9">
+                    <div class="checkbox-column">
+                        @foreach (var actor in Model.actors)
+                        {
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox"
+                                       id="actor-@actor.ActorId"
+                                       name="movieDto.ActorIds" value="@actor.ActorId"
+                                       checked=@(CheckActor.IsSelected(Model.movieDto, actor)) />
+                                <label class="form-check-label" for="actor-@actor.ActorId">
+                                    @actor.ActorName
+                                </label>
+                            </div>
+                        }
+                    </div>
+                    <span class="text-danger" id="actor-error"></span>
+                    <a class="text-secondary" asp-area="Admin" asp-controller="Actor" asp-action="Upsert">
+                        Thêm diễn viên khác
+                    </a>
+                </div>
+            </div>
+            <partial name="_ActionOrReturnPartial" />
+        </div>
+
+        <div class="col-lg-4 p-4">
+            <div class="mb-3 row">
+                <div class="col-lg-10 col-6 offset-lg-1 offset-3">
+                    @if (Model.movieDto.ImageURL is not null)
+                    {
+                        <img class="img-fluid rounded"
+                             src="~/assets/images/@Model.movieDto.ImageURL" id="previewImage" />
+                    }
+                    else
+                    {
+                        <img class="img-fluid rounded"
+                             src="~/assets/images/No-Image-Placeholder.svg.png" id="previewImage" />
+                    }
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-lg-3">
+                    <label class="form-label">Ảnh</label>
+                </div>
+                <div class="col-lg-9">
+                    <input class="form-control" type="file" name="files" id="uploadBox" multiple />
+                    <input type="hidden" asp-for="movieDto.ImageURL">
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-lg-3">
+                    <label class="form-label">Xóa ảnh</label>
+                </div>
+                <div class="col-lg-9">
+                    <a class="btn btn-danger"
+                       onclick=Delete("/admin/book/deleteImage/@Model.movieDto.MovieId")>
+                        Xóa
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/validation/validate-checkboxes.js"></script>
+    <script src="~/js/search/search-author.js"></script>
+    <script src="~/js/search/search-publisher.js"></script>
+    <script src="~/js/handle-image/check-image.js"></script>
+    <script src="~/js/handle-image/confirm-delete-image.js"></script>
+}

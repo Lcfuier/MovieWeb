@@ -1,13 +1,42 @@
 ﻿@model DetailViewDTO
+@using Microsoft.AspNetCore.Identity
 @{
     ViewData["Title"] = "Detail";
 }
+@{
+    var topRatedMovie = Model.movies.OrderByDescending(x => x.AverageStar).Take(4);
+}
+
+@inject SignInManager<User> SignInManager
+@inject UserManager<User> UserManager
 <div>
-    <section class="movie-detail">
+    <section class="movie-detail" style="background-image: url('../../assets/images/upcoming-bg.png')">
         <div class="container">
+            <nav style="--bs-breadcrumb-divider: '>>';" >
+                <ol class="breadcrumb">
+         
+                    <li class="breadcrumb-item"><a asp-area="" asp-controller="Home" asp-action="Index">Trang Chủ</a></li>
+                    @if (Model.movie.IsSeriesMovie)
+                    {
 
-            <figure class="movie-detail-banner">
-
+                        <li class="breadcrumb-item">Phim Bộ</li>
+                      
+                    }
+                    else
+                    {
+                        <li class="breadcrumb-item">Phim Lẻ</li>
+                    }
+                    
+                    <li class="breadcrumb-item">@Model.movie.Title</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="container">
+            @if (Model.movie.Released)
+            {
+                <a asp-area="" asp-controller="Movie" asp-action="PlayMovie" asp-route-Movieid="@Model.movie.MovieId">
+                    <figure class="movie-detail-banner">
+                
                 <img src="~/assets/images/@Model.movie.ImageURL" alt="Free guy movie poster">
 
                 <button class="play-btn">
@@ -15,10 +44,21 @@
                 </button>
 
             </figure>
+                </a>
+            }
+            else
+            {
+                <figure class="movie-detail-banner">
+                
+                <img src="~/assets/images/@Model.movie.ImageURL" alt="Free guy movie poster">
 
-            <div class="movie-detail-content">
+                
+                </figure>
+                
+            }
+            <div class="movie-detail-content" style="max-width: 820px">
 
-                <p class="detail-subtitle">New Episodes</p>
+
 
                 <h1 class="h1 detail-title">
                     <strong>@Model.movie.Title</strong>
@@ -60,205 +100,188 @@
 
                 </div>
 
-                <p class="storyline">
-                    A bank teller called Guy realizes he is a background character in an open world video game called Free
-                    City that will
-                    soon go offline.
-                </p>
 
-                <div class="details-actions">
 
-                    <button class="share">
-                        <ion-icon name="share-social"></ion-icon>
-
-                        <span>Share</span>
-                    </button>
-
-                    <div class="title-wrapper">
-                        <p class="title">Prime Video</p>
-
-                        <p class="text">Streaming Channels</p>
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Nội Dung</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Diễn Viên</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Trailer</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-comment" type="button" role="tab" aria-controls="pills-comment" aria-selected="false">Bình Luận</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">@Model.movie.Description</div>
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="row align-items-start">
+                        @foreach (var actor in Model.movie.Actors)
+                        {
+                                <div class="col-4 ">
+                            <a asp-area="" asp-controller="Book" asp-action="GetBookByCategory"asp-route-id="@actor.ActorId"><span class="badge rounded-pill bg-warning">@actor.ActorName</span></a>
+                            </div>
+                        }
+                        </div>
                     </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <iframe width="900" height="500"
+                                src="@Model.movie.TrailerURL.Replace($"watch?v=",$"embed/")">
+                        </iframe>
+                    </div>
+                    <div class="tab-pane fade" id="pills-comment" role="tabpanel" aria-labelledby="pills-comment-tab">
+                        <link rel="stylesheet" href="~/css/Comment.css">
+                        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+                        <div class="container">
+                            <div class="be-comment-block"> 
+                               @if(Model.ratings.Count()>0){
+                                @foreach (var rate in Model.ratings){
+                                <div class="be-comment">
+                                    <div class="be-img-comment">
+                                    </div>
+                                    <div class="be-comment-content">
 
-                    <button class="btn btn-primary">
-                        <ion-icon name="play"></ion-icon>
+                                        <span class="be-comment-name">
+                                            <a href="blog-detail-2.html">@rate.fullName</a>
+                                        </span>
+                                        <span class="">
+                                                    @if(rate.rating!=0){
+                                                    @for (int i = 1; i <= rate.rating; i++)
+                                                    {
+                                                        <i class="bi bi-star-fill"></i>
+                                                    }
+                                                    }
+                                        </span>
 
-                        <span>Watch Now</span>
-                    </button>
+                                        <p class="be-comment-text">
+                                            @rate.Comment
+                                        </p>
+                                                @if (SignInManager.IsSignedIn(User))
+                                                {
+                                                    <a asp-controller="Rating" asp-action="DeleteRating" asp-route-id="@rate.RatingId" asp-route-MovieId="@Model.movie.MovieId" class="btn btn-danger " style="width:70px;height:32px;font-size:10px;padding-left:10px">Delete</a>
+                                                }
+                                            </div>
+                                </div>
+                                }}
+                                <form asp-controller="Rating" asp-action="PostRating" method="post" asp-route-MovieId="@Model.movie.MovieId">
+                                    <div class="stars" for="stars" id="stars">
+                                        <input class="star star-5" id="star-5" type="radio" name="stars" value="5" />
 
+                                        <label class="star star-5" for="star-5"></label>
+
+                                        <input class="star star-4" id="star-4" type="radio" name="stars" value="4" />
+
+                                        <label class="star star-4" for="star-4"></label>
+
+                                        <input class="star star-3" id="star-3" type="radio" name="stars" value="3" />
+
+                                        <label class="star star-3" for="star-3"></label>
+
+                                        <input class="star star-2" id="star-2" type="radio" name="stars" value="2" />
+
+                                        <label class="star star-2" for="star-2"></label>
+
+                                        <input class="star star-1" id="star-1" type="radio" name="stars" value="1" />
+
+                                        <label class="star star-1" for="star-1"></label>
+                                    </div>
+
+
+                                    <div class="row">
+                                        <input type="text" class="form-control-comment" id="comment" name="comment" placeholder="Enter your comment...">
+                                    </div>
+                                    <div class=" p-2">
+                                        <div class="mt-2 text-right"><button class="btn btn-primary btn-sm shadow-none" type="submit">Bình luận</button></div>
+                                    </div>
+                                </form>
+                                
+
+                                    
+                             </div>
+                            
+                                
+                            
+                    </div>
                 </div>
 
-                <a href="./assets/images/movie-4.png" download class="download-btn">
-                    <span>Download</span>
-
-                    <ion-icon name="download-outline"></ion-icon>
-                </a>
-
             </div>
+
 
         </div>
     </section>
 
+    
 
-
-
-
-    <!--
-      - #TV SERIES
-    -->
-
-    <section class="tv-series">
+    <section class="top-rated">
         <div class="container">
 
-            <p class="section-subtitle">Best TV Series</p>
+            <p class="section-subtitle">Online Streaming</p>
 
-            <h2 class="h2 section-title">World Best TV Series</h2>
+            <h2 class="h2 section-title">Top Rated Movies</h2>
+
+            <ul class="filter-list">
+
+                <li>
+                    <button class="filter-btn">Movies</button>
+                </li>
+
+                <li>
+                    <button class="filter-btn">TV Shows</button>
+                </li>
+
+                <li>
+                    <button class="filter-btn">Documentary</button>
+                </li>
+
+                <li>
+                    <button class="filter-btn">Sports</button>
+                </li>
+
+            </ul>
 
             <ul class="movies-list">
+                @foreach (var movie in topRatedMovie)
+                {
+                    <li>
+                        <div class="movie-card">
 
-                <li>
-                    <div class="movie-card">
-
-                        <a href="./movie-details.html">
-                            <figure class="card-banner">
-                                <img src="./assets/images/series-1.png" alt="Moon Knight movie poster">
-                            </figure>
-                        </a>
-
-                        <div class="title-wrapper">
-                            <a href="./movie-details.html">
-                                <h3 class="card-title">Moon Knight</h3>
+                            <a asp-controller="Movie" asp-action="Detail" asp-route-id="@movie.MovieId">
+                                <figure class="card-banner">
+                                    <img src="~/assets/images/@movie.ImageURL" alt="Sonic the Hedgehog 2 movie poster">
+                                </figure>
                             </a>
 
-                            <time datetime="2022">2022</time>
-                        </div>
+                            <div class="title-wrapper">
+                                <a asp-controller="Movie" asp-action="Detail" asp-route-id="@movie.MovieId">
+                                    <h3 class="card-title">@movie.Title</h3>
+                                </a>
 
-                        <div class="card-meta">
-                            <div class="badge badge-outline">2K</div>
-
-                            <div class="duration">
-                                <ion-icon name="time-outline"></ion-icon>
-
-                                <time datetime="PT47M">47 min</time>
+                                <time datetime="2022">@movie.ReleaseYear</time>
                             </div>
 
-                            <div class="rating">
-                                <ion-icon name="star"></ion-icon>
+                            <div class="card-meta">
+                                <div class="badge badge-outline">@movie.quality</div>
 
-                                <data>8.6</data>
-                            </div>
-                        </div>
+                                <div class="duration">
+                                    <ion-icon name="time-outline"></ion-icon>
 
-                    </div>
-                </li>
+                                    <time datetime="PT122M">@movie.MovieDuration min</time>
+                                </div>
 
-                <li>
-                    <div class="movie-card">
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
 
-                        <a href="./movie-details.html">
-                            <figure class="card-banner">
-                                <img src="./assets/images/series-2.png" alt="Halo movie poster">
-                            </figure>
-                        </a>
-
-                        <div class="title-wrapper">
-                            <a href="./movie-details.html">
-                                <h3 class="card-title">Halo</h3>
-                            </a>
-
-                            <time datetime="2022">2022</time>
-                        </div>
-
-                        <div class="card-meta">
-                            <div class="badge badge-outline">2K</div>
-
-                            <div class="duration">
-                                <ion-icon name="time-outline"></ion-icon>
-
-                                <time datetime="PT59M">59 min</time>
+                                    <data>@movie.AverageStar</data>
+                                </div>
                             </div>
 
-                            <div class="rating">
-                                <ion-icon name="star"></ion-icon>
-
-                                <data>8.8</data>
-                            </div>
                         </div>
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="movie-card">
-
-                        <a href="./movie-details.html">
-                            <figure class="card-banner">
-                                <img src="./assets/images/series-3.png" alt="Vikings: Valhalla movie poster">
-                            </figure>
-                        </a>
-
-                        <div class="title-wrapper">
-                            <a href="./movie-details.html">
-                                <h3 class="card-title">Vikings: Valhalla</h3>
-                            </a>
-
-                            <time datetime="2022">2022</time>
-                        </div>
-
-                        <div class="card-meta">
-                            <div class="badge badge-outline">2K</div>
-
-                            <div class="duration">
-                                <ion-icon name="time-outline"></ion-icon>
-
-                                <time datetime="PT51M">51 min</time>
-                            </div>
-
-                            <div class="rating">
-                                <ion-icon name="star"></ion-icon>
-
-                                <data>8.3</data>
-                            </div>
-                        </div>
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="movie-card">
-
-                        <a href="./movie-details.html">
-                            <figure class="card-banner">
-                                <img src="./assets/images/series-4.png" alt="Money Heist movie poster">
-                            </figure>
-                        </a>
-
-                        <div class="title-wrapper">
-                            <a href="./movie-details.html">
-                                <h3 class="card-title">Money Heist</h3>
-                            </a>
-
-                            <time datetime="2017">2017</time>
-                        </div>
-
-                        <div class="card-meta">
-                            <div class="badge badge-outline">4K</div>
-
-                            <div class="duration">
-                                <ion-icon name="time-outline"></ion-icon>
-
-                                <time datetime="PT70M">70 min</time>
-                            </div>
-
-                            <div class="rating">
-                                <ion-icon name="star"></ion-icon>
-
-                                <data>8.3</data>
-                            </div>
-                        </div>
-
-                    </div>
-                </li>
+                    </li>
+                }
 
             </ul>
 

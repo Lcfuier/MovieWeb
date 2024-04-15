@@ -3,36 +3,20 @@
   "WorkspaceRootPath": "D:\\MovieWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2869E77E-43C5-4FF4-B835-82094C85C7B1}|Model\\Model.csproj|d:\\movieweb\\model\\entitys\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2869E77E-43C5-4FF4-B835-82094C85C7B1}|Model\\Model.csproj|solutionrelative:model\\entitys\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|d:\\movieweb\\presentation\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|d:\\movieweb\\presentation\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|d:\\movieweb\\presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|d:\\movieweb\\presentation\\views\\movie\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\movie\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|d:\\movieweb\\presentation\\views\\home\\singlemovie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\home\\singlemovie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|d:\\movieweb\\presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|d:\\movieweb\\presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2869E77E-43C5-4FF4-B835-82094C85C7B1}|Model\\Model.csproj|d:\\movieweb\\model\\dtos\\homedisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2869E77E-43C5-4FF4-B835-82094C85C7B1}|Model\\Model.csproj|solutionrelative:model\\dtos\\homedisplaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|d:\\movieweb\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2869E77E-43C5-4FF4-B835-82094C85C7B1}|Model\\Model.csproj|d:\\movieweb\\model\\dtos\\detailviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2869E77E-43C5-4FF4-B835-82094C85C7B1}|Model\\Model.csproj|solutionrelative:model\\dtos\\detailviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|d:\\movieweb\\presentation\\views\\home\\seriesmovie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A059D3FE-462A-4015-AAE3-B3D9C90624E8}|Presentation\\Presentation.csproj|solutionrelative:presentation\\views\\home\\seriesmovie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,105 +31,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Movie.cs",
-              "DocumentMoniker": "D:\\MovieWeb\\Model\\Entitys\\Movie.cs",
-              "RelativeDocumentMoniker": "Model\\Entitys\\Movie.cs",
-              "ToolTip": "D:\\MovieWeb\\Model\\Entitys\\Movie.cs",
-              "RelativeToolTip": "Model\\Entitys\\Movie.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAA2wAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T13:18:18.254Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\MovieWeb\\Presentation\\Program.cs",
-              "RelativeDocumentMoniker": "Presentation\\Program.cs",
-              "ToolTip": "D:\\MovieWeb\\Presentation\\Program.cs",
-              "RelativeToolTip": "Presentation\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAmwAwAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T13:03:46.956Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DetailViewDTO.cs",
-              "DocumentMoniker": "D:\\MovieWeb\\Model\\DTOs\\DetailViewDTO.cs",
-              "RelativeDocumentMoniker": "Model\\DTOs\\DetailViewDTO.cs",
-              "ToolTip": "D:\\MovieWeb\\Model\\DTOs\\DetailViewDTO.cs",
-              "RelativeToolTip": "Model\\DTOs\\DetailViewDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T12:44:18.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Detail.cshtml",
-              "DocumentMoniker": "D:\\MovieWeb\\Presentation\\Views\\Movie\\Detail.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\Views\\Movie\\Detail.cshtml",
-              "ToolTip": "D:\\MovieWeb\\Presentation\\Views\\Movie\\Detail.cshtml",
-              "RelativeToolTip": "Presentation\\Views\\Movie\\Detail.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAABIAAAA",
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "D:\\MovieWeb\\Presentation\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "D:\\MovieWeb\\Presentation\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-03T12:24:31.208Z",
+              "WhenOpened": "2024-04-14T18:11:25.403Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MovieController.cs",
-              "DocumentMoniker": "D:\\MovieWeb\\Presentation\\Controllers\\MovieController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\MovieController.cs",
-              "ToolTip": "D:\\MovieWeb\\Presentation\\Controllers\\MovieController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\MovieController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAzwBYAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T12:24:04.86Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\MovieWeb\\Presentation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\MovieWeb\\Presentation\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-14T18:11:20.352Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HomeDisplayDTO.cs",
-              "DocumentMoniker": "D:\\MovieWeb\\Model\\DTOs\\HomeDisplayDTO.cs",
-              "RelativeDocumentMoniker": "Model\\DTOs\\HomeDisplayDTO.cs",
-              "ToolTip": "D:\\MovieWeb\\Model\\DTOs\\HomeDisplayDTO.cs",
-              "RelativeToolTip": "Model\\DTOs\\HomeDisplayDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T17:39:38.713Z",
+              "DocumentIndex": 2,
+              "Title": "SingleMovie.cshtml",
+              "DocumentMoniker": "D:\\MovieWeb\\Presentation\\Views\\Home\\SingleMovie.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Home\\SingleMovie.cshtml",
+              "ToolTip": "D:\\MovieWeb\\Presentation\\Views\\Home\\SingleMovie.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Home\\SingleMovie.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-14T18:10:14.808Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\MovieWeb\\Presentation\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Presentation\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\MovieWeb\\Presentation\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Presentation\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAACMAAAAAAAAAAAAAAIYAAAAAAAAA",
+              "Title": "SeriesMovie.cshtml",
+              "DocumentMoniker": "D:\\MovieWeb\\Presentation\\Views\\Home\\SeriesMovie.cshtml",
+              "RelativeDocumentMoniker": "Presentation\\Views\\Home\\SeriesMovie.cshtml",
+              "ToolTip": "D:\\MovieWeb\\Presentation\\Views\\Home\\SeriesMovie.cshtml",
+              "RelativeToolTip": "Presentation\\Views\\Home\\SeriesMovie.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-02T16:52:05.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\MovieWeb\\Presentation\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\MovieWeb\\Presentation\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAYwBUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-02T16:51:45.168Z",
+              "WhenOpened": "2024-04-14T18:10:10.237Z",
               "EditorCaption": ""
             }
           ]

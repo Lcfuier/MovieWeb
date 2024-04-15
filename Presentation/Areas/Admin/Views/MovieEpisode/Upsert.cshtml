@@ -1,0 +1,60 @@
+﻿@using Model.Constants
+@model UpdateEpisodeDTO
+@{
+    ViewData["Title"] = ViewBag.Action == "Add" ? "Thêm Tập" : "Chỉnh Sửa Tập";
+}
+<form asp-action="Upsert" id="movie-upsert-form" method="post" enctype="multipart/form-data">
+    <div class="row p-3 border">
+        <div class="col-12 border-bottom">
+            <h2 class="text-primary">@ViewData["Title"]</h2>
+        </div>
+        <div class="col-lg-8 pt-4">
+            <input type="hidden" asp-for="MovieDetailDTO.MovieDetailId" />
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="@Model.MovieDetailDTO.MovieDetailName">Tên tập*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control" asp-for="MovieDetailDTO.MovieDetailName" />
+                    <span class="text-danger" asp-validation-for="MovieDetailDTO.MovieDetailName"></span>
+                </div>
+            </div>
+
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label" asp-for="MovieDetailDTO.UrlMovie">URL phim*</label>
+                </div>
+                <div class="col-9">
+                    <input class="form-control"  asp-for="MovieDetailDTO.UrlMovie"/>
+                    <span class="text-danger" asp-validation-for="MovieDetailDTO.UrlMovie"></span>
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <div class="col-3">
+                    <label class="form-label">Phim*</label>
+                </div>
+                <div class="col-9">
+                    <label class="visually-hidden" for="MovieDetailDTO.MovieId">Tác giả</label>
+                    <select class="form-select" id="MovieDetailDTO.MovieId" name="MovieDetailDTO.MovieId">
+                        <option selected>Phim...</option>
+                        @foreach (var movie in Model.movies)
+                        {
+                            <option selected="@(movie.MovieId==Model.MovieDetailDTO.MovieId)" value="@movie.MovieId" asp-for="MovieDetailDTO.MovieId">@movie.Title</option>
+                        }
+                    </select>
+                    <span class="text-danger" asp-validation-for="MovieDetailDTO.MovieId"></span>
+                    <a class="text-secondary" asp-area="Admin" asp-controller="Movie" asp-action="Upsert">
+                        Thêm Phim khác
+                    </a>
+                </div>
+            </div>
+            <partial name="_ActionOrReturnPartial" />
+            
+        </div>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -175,12 +175,10 @@ namespace DataAccess.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -217,12 +215,10 @@ namespace DataAccess.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -286,6 +282,9 @@ namespace DataAccess.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsSeriesMovie")
+                        .HasColumnType("bit");
+
                     b.Property<string>("Language")
                         .IsRequired()
                         .HasMaxLength(80)
@@ -299,6 +298,10 @@ namespace DataAccess.Migrations
                     b.Property<int>("MovieDuration")
                         .HasColumnType("int");
 
+                    b.Property<string>("PosterURL")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("ReleaseYear")
                         .HasColumnType("int");
 
@@ -310,7 +313,7 @@ namespace DataAccess.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
-                    b.Property<string>("UrlMovie")
+                    b.Property<string>("TrailerURL")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -322,6 +325,30 @@ namespace DataAccess.Migrations
                     b.HasKey("MovieId");
 
                     b.ToTable("Movie");
+                });
+
+            modelBuilder.Entity("Model.Entitys.MovieDetail", b =>
+                {
+                    b.Property<Guid>("MovieDetailId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("MovieDetailName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("MovieId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("UrlMovie")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("MovieDetailId");
+
+                    b.HasIndex("MovieId");
+
+                    b.ToTable("MovieDetail");
                 });
 
             modelBuilder.Entity("Model.Entitys.Rating", b =>
@@ -461,6 +488,17 @@ namespace DataAccess.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Model.Entitys.MovieDetail", b =>
+                {
+                    b.HasOne("Model.Entitys.Movie", "Movie")
+                        .WithMany("MovieDetails")
+                        .HasForeignKey("MovieId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Movie");
+                });
+
             modelBuilder.Entity("Model.Entitys.Rating", b =>
                 {
                     b.HasOne("Model.Entitys.Movie", "Movie")
@@ -516,6 +554,8 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("Model.Entitys.Movie", b =>
                 {
+                    b.Navigation("MovieDetails");
+
                     b.Navigation("Ratings");
                 });
 

@@ -11,6 +11,7 @@ namespace DataAccess.IRepositories
         IActorRepository Actor { get; }
         IGenreRepository Genre { get; }
         IMovieRepository Movie { get; }
+        IMovieDetailRepository MovieDetail { get; }
         IRatingRepository Rating { get; }
         IUserRepository User { get; }
         Task SaveAsync();

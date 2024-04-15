@@ -5,8 +5,16 @@
       "PackagePath": "staticwebassets\\Presentation.bundle.scp.css"
     },
     {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\css\\Comment.css",
+      "PackagePath": "staticwebassets\\assets\\css\\Comment.css"
+    },
+    {
       "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\css\\style.css",
       "PackagePath": "staticwebassets\\assets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\No-Image-Placeholder.svg.png",
+      "PackagePath": "staticwebassets\\assets\\images\\No-Image-Placeholder.svg.png"
     },
     {
       "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\assets\\images\\cta-bg.jpg",
@@ -121,8 +129,16 @@
       "PackagePath": "staticwebassets\\assets\\js\\script.js"
     },
     {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\css\\AdminSite .css",
+      "PackagePath": "staticwebassets\\css\\AdminSite .css"
+    },
+    {
       "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\css\\BoostrapTheme.css",
       "PackagePath": "staticwebassets\\css\\BoostrapTheme.css"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\css\\Comment.css",
+      "PackagePath": "staticwebassets\\css\\Comment.css"
     },
     {
       "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\css\\site.css",
@@ -133,8 +149,84 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\PlyrHTML.js",
+      "PackagePath": "staticwebassets\\js\\PlyrHTML.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\SearchBtn.js",
+      "PackagePath": "staticwebassets\\js\\SearchBtn.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\datatable\\actor.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\actor.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\datatable\\author.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\author.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\datatable\\category.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\category.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\datatable\\confirm-delete.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\confirm-delete.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\datatable\\episode.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\episode.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\datatable\\movie.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\movie.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\datatable\\order.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\order.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\datatable\\orderIndex.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\orderIndex.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\datatable\\publisher.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\publisher.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\datatable\\test.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\test.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\datatable\\user.js",
+      "PackagePath": "staticwebassets\\js\\datatable\\user.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\handle-image\\check-image.js",
+      "PackagePath": "staticwebassets\\js\\handle-image\\check-image.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\handle-image\\confirm-delete-image.js",
+      "PackagePath": "staticwebassets\\js\\handle-image\\confirm-delete-image.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\search\\search-author.js",
+      "PackagePath": "staticwebassets\\js\\search\\search-author.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\search\\search-book.js",
+      "PackagePath": "staticwebassets\\js\\search\\search-book.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\search\\search-publisher.js",
+      "PackagePath": "staticwebassets\\js\\search\\search-publisher.js"
+    },
+    {
       "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\js\\validation\\validate-checkboxes.js",
+      "PackagePath": "staticwebassets\\js\\validation\\validate-checkboxes.js"
     },
     {
       "Id": "D:\\MovieWeb\\Presentation\\wwwroot\\lib\\bootstrap\\LICENSE",

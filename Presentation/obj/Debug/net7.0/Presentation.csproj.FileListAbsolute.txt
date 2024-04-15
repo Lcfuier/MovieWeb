@@ -587,3 +587,11 @@ D:\MovieWeb\Presentation\obj\Debug\net7.0\refint\Presentation.dll
 D:\MovieWeb\Presentation\obj\Debug\net7.0\Presentation.pdb
 D:\MovieWeb\Presentation\obj\Debug\net7.0\Presentation.genruntimeconfig.cache
 D:\MovieWeb\Presentation\obj\Debug\net7.0\ref\Presentation.dll
+D:\MovieWeb\Presentation\bin\Debug\net7.0\System.Web.Mvc.dll
+D:\MovieWeb\Presentation\bin\Debug\net7.0\System.Web.Razor.dll
+D:\MovieWeb\Presentation\bin\Debug\net7.0\System.Web.Helpers.dll
+D:\MovieWeb\Presentation\bin\Debug\net7.0\System.Web.WebPages.Deployment.dll
+D:\MovieWeb\Presentation\bin\Debug\net7.0\System.Web.WebPages.Razor.dll
+D:\MovieWeb\Presentation\bin\Debug\net7.0\System.Web.WebPages.dll
+D:\MovieWeb\Presentation\bin\Debug\net7.0\Microsoft.Web.Infrastructure.dll
+D:\MovieWeb\Presentation\bin\Debug\net7.0\AutoMapper.dll

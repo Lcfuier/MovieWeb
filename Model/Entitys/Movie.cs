@@ -22,9 +22,10 @@ namespace Model.Entitys
         public int ReleaseYear { get; set; }
         [MaxLength(100)]
         public string Director { get; set; }
-        [Required]
-        public string UrlMovie { get; set; }
+        
         public string ImageURL { get; set; }
+        public string PosterURL { get; set; }
+        public string TrailerURL { get; set; }
         [MaxLength(10)]
         public string quality { get; set; }
         [MaxLength(5)]
@@ -34,12 +35,13 @@ namespace Model.Entitys
         public Boolean Released { get; set; }
         [NotMapped]
         public double AverageStar { get; set; }
-
-        public virtual ICollection<Actor> Actors { get; set; } = new List<Actor>();
+        public Boolean IsSeriesMovie { get; set; }
+        public virtual ICollection<Actor> Actors { get; set; } = new List<Actor>();  
 
 
         public virtual ICollection<Genre> Genres { get; set; } = new List<Genre>();
         public  ICollection<Rating> Ratings{ get; set; } = new List<Rating>();
+        public ICollection<MovieDetail> MovieDetails { get; set; } = new List<MovieDetail>();
 
     }
 }

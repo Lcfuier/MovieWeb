@@ -1,0 +1,56 @@
+﻿@model HomeDisplayDTO;
+@{
+    ViewData["Title"] = "Single Film";
+}
+<div>
+    <section class="tv-series">
+        <div class="container">
+
+            <p class="section-subtitle">Phim Lẻ</p>
+
+            <h2 class="h2 section-title">Phim Lẻ Hay Nhất</h2>
+
+            <ul class="movies-list">
+                @foreach (var film in Model.movies)
+                {
+                    <li>
+                        <div class="movie-card">
+
+                            <a asp-controller="Movie" asp-action="Detail" asp-route-id="@film.MovieId">
+                                <figure class="card-banner">
+                                    <img src="~/assets/images/@film.ImageURL" alt="Moon Knight movie poster">
+                                </figure>
+                            </a>
+
+                            <div class="title-wrapper">
+                                <a asp-controller="Movie" asp-action="Detail" asp-route-id="@film.MovieId">
+                                    <h3 class="card-title">@film.Title</h3>
+                                </a>
+
+                                <time datetime="2022">@film.ReleaseYear</time>
+                            </div>
+
+                            <div class="card-meta">
+                                <div class="badge badge-outline">@film.quality</div>
+
+                                <div class="duration">
+                                    <ion-icon name="time-outline"></ion-icon>
+
+                                    <time datetime="PT47M">@film.MovieDuration</time>
+                                </div>
+
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+
+                                    <data>@film.AverageStar</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                }
+            </ul>
+
+        </div>
+    </section>
+</div>

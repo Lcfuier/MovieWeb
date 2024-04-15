@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Model.Constants;
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -6,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Presentation</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-   
-   
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/Presentation.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--
       - favicon
     -->
@@ -21,14 +23,17 @@
     -->
     <!--
       - google font link
-    -->
-    
-
-    <link rel="stylesheet" href="~/css/BoostrapTheme.css" />
-    <link rel="stylesheet" href="~/css/site.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+    -->
+    <link rel="stylesheet" href="~/css/BoostrapTheme.css" />
+    <link rel="stylesheet" href="~/css/site.css">
+
+    
+
+ 
+
 </head>
 <body>
     <header>
@@ -43,21 +48,25 @@
 
                 <div class="header-actions">
 
-                    <button class="search-btn">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </button>
+                    <form asp-controller="Home" asp-action="ListAllMovie" method="get" class="row row-cols-lg-auto g-3 align-items-center">
+                        <div class="col-12">
+                            <label class="visually-hidden" for="SearchString">Tìm kiếm phim</label>
+                            <div class="input-group">
+                                <div class="input-group-text"></div>
+                                <input type="text" class="form-control" value="" id="SearchString" name="SearchString" placeholder="Tìm kiếm phim">
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary"><ion-icon name="search-outline"></ion-icon></button>
+                        </div>
+                    </form>
 
                     <div class="lang-wrapper">
-                        <label for="language">
-                            <ion-icon name="globe-outline"></ion-icon>
-                        </label>
-
-                        <select name="language" id="language">
-                            <option value="en">EN</option>
-                            <option value="au">AU</option>
-                            <option value="ar">AR</option>
-                            <option value="tu">TU</option>
-                        </select>
+                        @if (User.IsInRole(Roles.Admin))
+                        {
+                            <a class="nav-link text-bg-primary" asp-area="Admin" asp-controller="Home" asp-action="Index"><i class="bi bi-file-bar-graph-fill"></i>&nbsp;Admin</a>
+                        }
                     </div>
 
                     <partial name="_LoginPartial" />
@@ -76,12 +85,12 @@
                             </a>
                         </li>
                         <li >
-                            <a class="nav-link active" href="#">Phim lẻ</a>
+                            <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="SingleMovie">Phim lẻ</a>
                         </li>
                         <li >
-                            <a class="nav-link active" href="#">Phim bộ</a>
+                            <a class="nav-link active" asp-area="" asp-controller="Home" asp-action="SeriesMovie" >Phim bộ</a>
                         </li>
-                        <li class="nav-item dropdown  " aria-haspopup="true" >
+                        <li class="nav-item dropdown " aria-haspopup="true" >
                             <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown">
                                 Quốc gia
                             </a>
@@ -132,9 +141,9 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/assets/js/script.js"></script>
-
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <!---->

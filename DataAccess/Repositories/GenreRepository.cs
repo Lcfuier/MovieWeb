@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Repositories
 {
-    public class GenreRepository : Repository<Genre>,IGenreRepository
+    public class GenreRepository : Repository<Genre>, IGenreRepository
     {
         public GenreRepository(MovieWebDbContext context) : base(context)
 

@@ -1,0 +1,163 @@
+﻿@model MoviePlayViewModel
+@{
+    ViewData["Title"] = "Play";
+}
+<form>
+<input type="hidden" asp-for="movies" />
+<input type="hidden" asp-for="movieDetails" />
+@{
+    var topRatedMovie = Model.movies.OrderByDescending(x => x.AverageStar).Take(4);
+}
+<div>
+
+        <section class="movie-detail" style="background-image: url('../../assets/images/upcoming-bg.png');max-height:auto">
+
+            <div class="container">
+                <nav style="--bs-breadcrumb-divider: '>>';">
+                    <ol class="breadcrumb">
+
+                        <li class="breadcrumb-item"><a asp-area="" asp-controller="Home" asp-action="Index">Trang Chủ</a></li>
+                        @if (Model.movieDetail.Movie.IsSeriesMovie)
+                        {
+
+                            <li class="breadcrumb-item">Phim Bộ</li>
+
+                        }
+                        else
+                        {
+                            <li class="breadcrumb-item">Phim Lẻ</li>
+                        }
+
+                        <li class="breadcrumb-item">@Model.movieDetail.Movie.Title</li>
+                    </ol>
+                </nav>
+            </div>
+        <div class="container">
+            <video controls crossorigin playsinline autoplay poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+                <source src="@Model.movieDetail.UrlMovie" type="video/mp4" size="576">
+                <source src="@Model.movieDetail.UrlMovie" type="video/mp4" size="720">
+                <source src="@Model.movieDetail.UrlMovie" type="video/mp4" size="1080">
+
+                <!-- Caption files -->
+                <track kind="captions" label="English" srclang="en" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.en.vtt"
+                       default>
+                <track kind="captions" label="Français" srclang="fr" src="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.fr.vtt">
+                <!-- Fallback for browsers that don't support the <video> element -->
+                <a href="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-576p.mp4" download>Download</a>
+            </video>
+        </div>
+        <div class="movie-detail-content  " style="max-width: 500px ;margin-top: 20px">
+        <!-- Plyr resources and browser polyfills are specified in the pen settings -->
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Tập</button>
+                </li>
+                
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                        @if (Model.movieDetails.Count() == 1)
+                        {
+                            <button type="button" class="btn btn-primary ">OneShot</button>
+                        }
+                        else if (Model.movieDetails.Count() > 1)
+                        {
+                            foreach (var episode in Model.movieDetails)
+                            {
+                                    <a asp-controller="Movie" asp-action="PlayMovie" asp-route-episodesId="@episode.MovieDetailId" asp-route-Movieid="@episode.MovieId" type="button" class="btn btn-primary ">@episode.MovieDetailName</a>
+                            }
+                        }
+
+                        
+                </div>
+                
+            </div>
+    </div>
+    </section>
+   
+
+     
+
+
+    <!--
+      - #TV SERIES
+    -->
+
+    <section class="top-rated">
+        <div class="container">
+
+            <p class="section-subtitle">Online Streaming</p>
+
+            <h2 class="h2 section-title">Top Rated Movies</h2>
+
+            <ul class="filter-list">
+
+                <li>
+                    <button class="filter-btn">Movies</button>
+                </li>
+
+                <li>
+                    <button class="filter-btn">TV Shows</button>
+                </li>
+
+                <li>
+                    <button class="filter-btn">Documentary</button>
+                </li>
+
+                <li>
+                    <button class="filter-btn">Sports</button>
+                </li>
+
+            </ul>
+
+            <ul class="movies-list">
+                @foreach (var movie in topRatedMovie)
+                {
+                    <li>
+                        <div class="movie-card">
+
+                            <a asp-controller="Movie" asp-action="Detail" asp-route-id="@movie.MovieId">
+                                <figure class="card-banner">
+                                    <img src="~/assets/images/@movie.ImageURL" alt="Sonic the Hedgehog 2 movie poster">
+                                </figure>
+                            </a>
+
+                            <div class="title-wrapper">
+                                <a asp-controller="Movie" asp-action="Detail" asp-route-id="@movie.MovieId">
+                                    <h3 class="card-title">@movie.Title</h3>
+                                </a>
+
+                                <time datetime="2022">@movie.ReleaseYear</time>
+                            </div>
+
+                            <div class="card-meta">
+                                <div class="badge badge-outline">@movie.quality</div>
+
+                                <div class="duration">
+                                    <ion-icon name="time-outline"></ion-icon>
+
+                                    <time datetime="PT122M">@movie.MovieDuration min</time>
+                                </div>
+
+                                <div class="rating">
+                                    <ion-icon name="star"></ion-icon>
+
+                                    <data>@movie.AverageStar</data>
+                                </div>
+                            </div>
+
+                        </div>
+                    </li>
+                }
+
+            </ul>
+
+        </div>
+    </section>
+
+</div>
+</form>
+@section Scripts {
+    <script src="~/js/PlyrHTML.js"></script>
+}

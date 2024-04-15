@@ -17,7 +17,7 @@ namespace Model.Entitys
         [Required]
         public Guid ActorId { get; set; }
         public Actor? Actor { get; set; }
-        public Genre? Genre { get; set; }   
+        public Movie? movie { get; set; }   
 
     }
 }
