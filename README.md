@@ -1,6 +1,6 @@
 # [MovieWeb]()
 
-BookStore is a web built with ASP.NET Core MVC, using Entity Framework Core and Microsoft SQL Server as the backend technologies. The project uses ASP.NET Core Identity for authentication and authorization, and follows the repository and unit of work pattern for data access. The project is structured using n-tier architecture, with separate projects for the Presentation, Model, and Data Access.
+MovieWeb is a web built with ASP.NET Core MVC, using Entity Framework Core and Microsoft SQL Server as the backend technologies. The project uses ASP.NET Core Identity for authentication and authorization, and follows the repository and unit of work pattern for data access. The project is structured using n-tier architecture, with separate projects for the Presentation, Model, and Data Access.
 # Project Description
 
 MovieWeb allows user to browse and watching movie. The project consists of two roles: User,  and Admin. User can watching movie,rate and comment the movie. Admin can add movie, edit or delete existing movie,actor,.., create account, assign permissions to users and lock/unlock account.
